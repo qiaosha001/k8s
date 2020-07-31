@@ -1,12 +1,12 @@
-# 一、installkubelet kubeadm kubectl in foreign  
-##### apt-get update && apt-get install -y apt-transport-https curl                  **（update and doanload tools）**  
-##### curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -   **(add public key and load apt-key.gpg )**  
-##### cat <<EOF >/etc/apt/sources.list.d/kubernetes.list                              **(add kubernetes source)**  
+# 一、install kubelet kubeadm kubectl in foreign  
+##### apt-get update && apt-get install -y apt-transport-https curl                   *（update and doanload tools）*  
+##### curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -   *(add public key and load apt-key.gpg )*  
+##### cat <<EOF >/etc/apt/sources.list.d/kubernetes.list                              *(add kubernetes source)*  
 ##### deb https://apt.kubernetes.io/ kubernetes-xenial main  
 ##### EOF  
-##### apt-get update                                                                   **(update source again)**  
-##### apt-get install -y kubelet kubeadm kubectl                                       **(install lastest kubelet kubeadm kubectl)**  
-##### apt-mark hold kubelet kubeadm kubectl                                            **(setting are not updated with system updates)**  
+##### apt-get update                                                                   *(update source again)*  
+##### apt-get install -y kubelet kubeadm kubectl                                       *(install lastest kubelet kubeadm kubectl)*  
+##### apt-mark hold kubelet kubeadm kubectl                                            *(setting are not updated with system updates)*  
 
 # 二、install kubelet kubeadm kubectl in domestic  
 ##### apt-get update && apt-get install -y apt-transport-https curl  

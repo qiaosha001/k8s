@@ -1,4 +1,4 @@
-#1、installkubelet kubeadm kubectl in foreign  
+# 1、installkubelet kubeadm kubectl in foreign  
 apt-get update && apt-get install -y apt-transport-https curl                  **（update and doanload tools）**  
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -   **(add public key and load apt-key.gpg )**  
 cat <<EOF >/etc/apt/sources.list.d/kubernetes.list                              **(add kubernetes source)**  
@@ -8,7 +8,7 @@ apt-get update                                                                  
 apt-get install -y kubelet kubeadm kubectl                                       **(install lastest kubelet kubeadm kubectl)**  
 apt-mark hold kubelet kubeadm kubectl                                            **(setting are not updated with system updates)**  
 
-#2、install kubelet kubeadm kubectl in domestic  
+# 2、install kubelet kubeadm kubectl in domestic  
 apt-get update && apt-get install -y apt-transport-https curl  
 (use apt-key.gpg in tool floler )  
 apt-key add apt-key.gpg  
